@@ -9,7 +9,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "ts-check": "vue-tsc --noEmit",
+    "type-check": "nuxt typecheck",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
