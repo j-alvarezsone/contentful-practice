@@ -11,7 +11,8 @@
     "postinstall": "nuxt prepare",
     "type-check": "nuxt typecheck",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@contentful/rich-text-types": "^17.2.5",
@@ -26,7 +27,12 @@
     "@types/node": "^24.10.0",
     "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.1.3"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
   }
 }
