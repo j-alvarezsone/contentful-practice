@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     CONTENTFUL_DELIVERY_TOKEN: process.env.CONTENTFUL_DELIVERY_TOKEN,
     CONTENTFUL_PREVIEW_TOKEN: process.env.CONTENTFUL_PREVIEW_TOKEN,
   },
+  typescript: {
+    typeCheck: true,
+  },
 });
