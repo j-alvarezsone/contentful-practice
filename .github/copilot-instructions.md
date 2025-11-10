@@ -68,6 +68,7 @@ These guidelines teach AI assistants (Copilot Chat, inline completions, etc.) ho
 ### 10. Commits & PR Guidance
 - One logical change per commit; clear message: `feat(mapper): normalize profile role`.
 - For AI-generated multi-file changes, include summary comment at top of each new file.
+- All PRs to `main` must pass CI: lint (`pnpm lint`) and type-check (`pnpm type-check`).
 
 ### 11. AI Completion DO / DON'T
 DO:
