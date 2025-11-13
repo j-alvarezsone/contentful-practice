@@ -1,1 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --step--2: clamp(0.8247rem, 0.8445rem + -0.022vw, 0.8395rem);
+  --step--1: clamp(0.9444rem, 0.9294rem + 0.0669vw, 1rem);
+  --step-0: clamp(1.0625rem, 1.0208rem + 0.1852vw, 1.1875rem);
+  --step-1: clamp(1.1953rem, 1.1188rem + 0.3403vw, 1.425rem);
+  --step-2: clamp(1.3447rem, 1.223rem + 0.5411vw, 1.71rem);
+  --step-3: clamp(1.5128rem, 1.3331rem + 0.7988vw, 2.052rem);
+  --step-4: clamp(1.7019rem, 1.4484rem + 1.1266vw, 2.4624rem);
+  --step-5: clamp(1.9147rem, 1.5679rem + 1.5411vw, 2.9549rem);
+  --step-6: clamp(2.154rem, 1.69rem + 2.062vw, 3.5459rem);
+
+  --color-text: #000000;
+
+  --font-instrument: "Instrument Sans", sans-serif;
+  --font-geist: "Geist", sans-serif;
+}
+
+:root.dark {
+  --color-text: #ffffff;
+}
+
+@theme {
+  --text-xs: var(--step--2);
+  --text-sm: var(--step--1);
+  --text-base: var(--step-0);
+  --text-lg: var(--step-1);
+  --text-xl: var(--step-2);
+  --text-2xl: var(--step-3);
+  --text-3xl: var(--step-4);
+  --text-4xl: var(--step-5);
+  --text-5xl: var(--step-6);
+
+  --font-instrument: "Instrument Sans", sans-serif;
+  --font-geist: "Geist", sans-serif;
+
+  --color-tbase-500: var(--color-text);
+}
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-balance;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+
+  h1 {
+    @apply text-tbase-500/90 text-3xl leading-tight font-bold;
+  }
+
+  h2 {
+    @apply text-tbase-500/90 text-2xl leading-tight font-bold;
+  }
+
+  h3 {
+    @apply text-tbase-500/90 text-xl leading-tight font-semibold;
+  }
+
+  hr {
+    @apply my-2 border-gray-300;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-700 decoration-[1.4px] underline-offset-2 transition-all hover:underline;
+  }
+
+  pre {
+    @apply text-sm;
+  }
+}
+
+html {
+  color-scheme: light;
+  letter-spacing: 0.013rem;
+}
+
+html.dark {
+  color-scheme: dark;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+}
+
+body {
+  font-family: var(--font-geist);
+  font-size: var(--text-base);
+  min-height: 100vh;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-instrument);
+}
