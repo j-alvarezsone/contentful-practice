@@ -45,6 +45,6 @@
     "vue-tsc": "^3.1.5"
   },
   "lint-staged": {
-    "*": "pnpm lint"
+    "*.{js,ts,vue,css,json,md}": "pnpm lint"
   }
 }
