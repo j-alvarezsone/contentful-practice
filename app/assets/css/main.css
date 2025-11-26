@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+/* Google Fonts imports removed. Use Nuxt's font optimization or add <link> tags in app head. */
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
