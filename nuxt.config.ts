@@ -2,6 +2,18 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          "Instrument+Sans": true,
+          "Geist": ["100..900"],
+        },
+        display: "swap",
+      },
+    ],
+  ],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {

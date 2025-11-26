@@ -31,6 +31,7 @@
     "@graphql-codegen/typescript": "^5.0.2",
     "@graphql-codegen/typescript-graphql-request": "^6.3.0",
     "@graphql-codegen/typescript-operations": "^5.0.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@types/node": "^24.10.0",
     "dotenv": "^17.2.3",
     "eslint": "^9.39.1",
