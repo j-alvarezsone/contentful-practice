@@ -17,8 +17,7 @@
 
   --color-text: #000000;
 
-  --font-instrument: "Instrument Sans", sans-serif;
-  --font-geist: "Geist", sans-serif;
+  /* Font family custom properties removed; now defined in @theme for Tailwind extension. */
 }
 
 :root.dark {
