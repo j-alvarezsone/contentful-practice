@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       },
       display: "swap",
     },
-  ], "@nuxtjs/supabase"],
+  ], "@nuxtjs/supabase", "@nuxt/ui"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {
@@ -32,5 +32,6 @@ export default defineNuxtConfig({
   supabase: {
     url: process.env.NUXT_SUPABASE_URL,
     key: process.env.NUXT_SUPABASE_PUBLISHABLE_KEY,
+    types: false,
   },
 });
