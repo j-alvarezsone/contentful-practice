@@ -2,7 +2,7 @@
   "name": "contentful",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c",
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
   "scripts": {
     "build": "nuxt build",
     "dev": "concurrently \"pnpm codegen:watch\" \"nuxt dev\"",
@@ -18,33 +18,33 @@
   },
   "dependencies": {
     "@contentful/rich-text-types": "^17.2.5",
-    "@tailwindcss/vite": "^4.1.17",
-    "contentful": "^11.9.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "contentful": "^11.10.1",
     "contentful-rich-text-vue-renderer": "^3.2.0",
-    "nuxt": "^4.2.1",
-    "tailwindcss": "^4.1.17",
+    "nuxt": "^4.2.2",
+    "tailwindcss": "^4.1.18",
     "vue": "^3.5.25",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
+    "@antfu/eslint-config": "^6.6.1",
     "@graphql-codegen/cli": "^6.1.0",
-    "@graphql-codegen/typescript": "^5.0.5",
+    "@graphql-codegen/typescript": "^5.0.6",
     "@graphql-codegen/typescript-graphql-request": "^6.3.0",
-    "@graphql-codegen/typescript-operations": "^5.0.5",
+    "@graphql-codegen/typescript-operations": "^5.0.6",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@types/node": "^24.10.0",
+    "@types/node": "^25.0.1",
     "concurrently": "^9.2.1",
     "dotenv": "^17.2.3",
-    "eslint": "^9.39.1",
-    "eslint-plugin-format": "^1.0.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
     "graphql": "^16.12.0",
-    "graphql-request": "^7.3.5",
+    "graphql-request": "^7.4.0",
     "graphql-tag": "^2.12.6",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "typescript": "^5.9.3",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.8"
   },
   "lint-staged": {
     "*.{js,ts,vue,css,json,md}": "pnpm lint"
