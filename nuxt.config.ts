@@ -33,5 +33,12 @@ export default defineNuxtConfig({
     url: process.env.NUXT_SUPABASE_URL,
     key: process.env.NUXT_SUPABASE_PUBLISHABLE_KEY,
     types: false,
+    redirectOptions: {
+      login: "/auth/login",
+      callback: "/auth/confirm",
+      include: undefined,
+      exclude: [],
+      saveRedirectToCookie: false,
+    },
   },
 });

@@ -1,5 +1,6 @@
 /* Google Fonts imports removed. Use Nuxt's font optimization or add <link> tags in app head. */
 @import "tailwindcss";
+@import "@nuxt/ui";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
