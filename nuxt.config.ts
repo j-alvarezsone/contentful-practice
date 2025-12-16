@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [[
+  modules: ["@nuxtjs/supabase", "@nuxt/ui", [
     "@nuxtjs/google-fonts",
     {
       families: {
@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       },
       display: "swap",
     },
-  ], "@nuxtjs/supabase", "@nuxt/ui"],
+  ]],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {
